@@ -1,3 +1,6 @@
+pip==25.0
+setuptools
+wheel
 flask
 flask-cors
 gunicorn
