@@ -3,6 +3,7 @@ setuptools
 wheel
 flask
 flask-cors
+scipy
 gunicorn
 numpy
 opencv-python
