@@ -8,7 +8,7 @@ numpy
 opencv-python
 pillow
 requests
-python-dotenv
+Python 3.10
 mysql-connector-python
 deepface
 tensorflow==2.12.1
