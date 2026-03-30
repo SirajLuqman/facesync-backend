@@ -781,12 +781,6 @@ def export_logs():
         conn.close()
 
 if __name__ == "__main__":
-    print("🚀 Warming up...")
-    dummy = np.zeros((1, 160, 160, 3), dtype="float32")
-    embedder.embeddings(dummy)
-    
-    # We update the global variable we defined at the top
-    KNOWN_EMBEDDINGS = fetch_all_embeddings() 
-    
-    print(f"✅ Ready! Loaded {len(KNOWN_EMBEDDINGS)} face signatures.")
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
