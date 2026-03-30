@@ -1,0 +1,9 @@
+tf_env/
+venv/
+__pycache__/
+*.pyc
+*.pyd
+*.dll
+*.lib
+*.zip
+*.h5
